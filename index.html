@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Project</title>
+
+    <link
+    rel="apple-touch-icon"
+    sizes="180x180"
+    href="apple-touch-icon.png"
+  />
+
+  <link rel="manifest" href="site.webmanifest" />
+
+      <!-- Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      <!-- link css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <!-- Header -->
+            <header class="header">
+                <h1 class="title">DevDetective</h1>
+                <div class="btn" id="modeBtn">
+                    <p class="modeText">Dark</p>
+                    <div class="iconContainer">
+                        <img src="moon-icon.svg" alt="" id="modeIcon" loadind="lazy">
+                    </div>
+                </div>
+            </header>
+
+
+            <main>
+            <!-- Search container -->
+            <div class="searchContainer">
+
+                <!-- //search icon kyu nahe likha  -->
+
+                <input type="text" id="input"
+                placeholder="Enter a Github username..."
+                required
+                autofocus>
+
+                <!-- Error -->
+                <div class="error">
+                    <p id="noResults">No search results</p>
+                </div>
+
+                <button id="btn">Search</button>
+            </div>
+
+             <!-- Profile Container -->
+          <div class="profileContainer">
+            <div class="profileContent">
+              <div class="profileHeader">
+                <img id="userImage" loading="lazy" />
+                <div class="profileInfoWrapper">
+                  <div class="profileName">
+                    <h2 id="name"></h2>
+                    <a
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      id="username"
+                    ></a>
+                  </div>
+                  <p id="date"></p>
+                </div>
+              </div>
+
+              <p id="profileBio"></p>
+
+              <div class="statsContainer">
+                <div class="profileStats">
+                  <p class="statsTitle">Repos</p>
+                  <a id="repos"></a>
+                </div>
+                <div class="profileStats">
+                  <p class="statsTitle">Followers</p>
+                  <a id="followers"></a>
+                </div>
+                <div class="profileStats">
+                  <p class="statsTitle">Following</p>
+                  <a id="following"></a>
+                </div>
+              </div>
+
+              <div class="profileFooter">
+                <div class="profileInfo">
+                  <div class="bottomIcon">
+                    <img
+                      src="location-icon.svg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <p id="location"></p>
+                </div>
+
+                <div class="profileInfo">
+                  <div class="bottomIcon">
+                    <img
+                      src="website-icon.svg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <a id="website"></a>
+                </div>
+                <div class="profileInfo">
+                  <div class="bottomIcon">
+                    <img
+                      src="twitter-icon.svg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <a id="twitter"></a>
+                </div>
+                <div class="profileInfo">
+                  <div class="bottomIcon">
+                    <img
+                      src="company-icon.svg"
+                      alt=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <p id="company"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
